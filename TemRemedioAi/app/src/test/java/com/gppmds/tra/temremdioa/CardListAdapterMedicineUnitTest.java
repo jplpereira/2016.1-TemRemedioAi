@@ -31,7 +31,7 @@ public class CardListAdapterMedicineUnitTest {
     private FilterSearchMedicine filter;
     private Medicine medicineTest1;
     private Medicine medicineTest2;
-    private ViewHolderMedicine viewHolderMedicine;
+    private ViewHolderMedicine ViewHolderMedicine;
     private Context context;
     private ViewGroup viewGroup;
     private CardView view;
@@ -41,7 +41,7 @@ public class CardListAdapterMedicineUnitTest {
     public void setup() {
         ParseObject.registerSubclass(Medicine.class);
         context = Mockito.mock(Context.class, Mockito.RETURNS_SMART_NULLS);
-        viewHolderMedicine = Mockito.mock(ViewHolderMedicine.class, Mockito.RETURNS_SMART_NULLS);
+        ViewHolderMedicine = Mockito.mock(ViewHolderMedicine.class, Mockito.RETURNS_SMART_NULLS);
         viewGroup = Mockito.mock(ViewGroup.class, Mockito.RETURNS_SMART_NULLS);
         context = Mockito.mock(Context.class, Mockito.RETURNS_SMART_NULLS);
         view = Mockito.mock(CardView.class, Mockito.RETURNS_SMART_NULLS);
@@ -81,17 +81,17 @@ public class CardListAdapterMedicineUnitTest {
     @Test
     public void onBindViewHolderTest() {
 
-        Mockito.when(viewHolderMedicine.getTextViewMedicineName()).thenReturn(textView);
-        Mockito.when(viewHolderMedicine.getTextViewMedicineType()).thenReturn(textView);
-        Mockito.when(viewHolderMedicine.getTextViewMedicineDosage()).thenReturn(textView);
-        Mockito.when(viewHolderMedicine.getTextViewMedicineAttentionLevel()).thenReturn(textView);
-        Mockito.when(viewHolderMedicine.getButtonSelectUbs()).thenReturn(Mockito.mock(Button.class));
+        Mockito.when(ViewHolderMedicine.getTextViewMedicineName()).thenReturn(textView);
+        //Mockito.when(ViewHolderMedicine.getTextViewMedicineType()).thenReturn(textView);
+        Mockito.when(ViewHolderMedicine.getTextViewMedicineDosage()).thenReturn(textView);
+        //Mockito.when(ViewHolderMedicine.getTextViewMedicineAttentionLevel()).thenReturn(textView);
+        Mockito.when(ViewHolderMedicine.getButtonSelectUbs()).thenReturn(Mockito.mock(Button.class));
 
-        cardListAdapterMedicine.onBindViewHolder(viewHolderMedicine, 0);
+        cardListAdapterMedicine.onBindViewHolder(ViewHolderMedicine, 0);
 
         cardListAdapterMedicine.setShowButtonUBSs(false);
 
-        cardListAdapterMedicine.onBindViewHolder(viewHolderMedicine, 0);
+        cardListAdapterMedicine.onBindViewHolder(ViewHolderMedicine, 0);
 
         Assert.assertNotNull(cardListAdapterMedicine);
     }

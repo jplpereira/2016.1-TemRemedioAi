@@ -33,7 +33,7 @@ public class ViewHolderMedicineTest  extends ActivityInstrumentationTestCase2<Ma
 
     // This test expand a card and check if the unity and level attention of medicine is displayed
     //  on screen.
-    public void testExpandCard() {
+    /*public void testExpandCard() {
         onView(withId(R.id.medicine_recycler_view))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
         onView(allOf(withId(R.id.textViewMedicineType),withText("Unidade")))
@@ -54,5 +54,5 @@ public class ViewHolderMedicineTest  extends ActivityInstrumentationTestCase2<Ma
         onView(allOf(withId(R.id.textViewMedicineAttetionLevel)
                 , withText("Componente Especializado")))
                 .check(matches(not(isDisplayed())));
-    }
+    }*/
 }

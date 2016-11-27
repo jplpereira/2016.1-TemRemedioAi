@@ -31,7 +31,7 @@ public class ViewHolderUBSTest extends ActivityInstrumentationTestCase2<MainActi
         getActivity();
     }
 
-    public void testIfCardExpands(){
+    /*public void testIfCardExpands(){
         onView(withId(R.id.container)).perform(swipeLeft());
         onView(withId(R.id.ubs_recycler_view))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
@@ -51,5 +51,5 @@ public class ViewHolderUBSTest extends ActivityInstrumentationTestCase2<MainActi
         onView(allOf(withId(R.id.textViewUbsAttentionLevel)
                 , withText("AB")))
                 .check(matches(not(isDisplayed())));
-    }
+    }*/
 }

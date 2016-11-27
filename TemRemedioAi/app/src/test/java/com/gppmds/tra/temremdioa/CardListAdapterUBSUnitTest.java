@@ -31,7 +31,7 @@ public class CardListAdapterUBSUnitTest {
     private FilterSearchUBS filter;
     private UBS ubsTest1;
     private UBS ubsTest2;
-    private ViewHolderUBS viewHolderUBS;
+    private ViewHolderUBS ViewHolderUBS;
     private Context context;
     private ViewGroup viewGroup;
     private CardView view;
@@ -41,7 +41,7 @@ public class CardListAdapterUBSUnitTest {
     public void cardListAdapterTest() {
         ParseObject.registerSubclass(UBS.class);
         context = Mockito.mock(Context.class, Mockito.RETURNS_SMART_NULLS);
-        viewHolderUBS = Mockito.mock(ViewHolderUBS.class, Mockito.RETURNS_SMART_NULLS);
+        ViewHolderUBS = Mockito.mock(ViewHolderUBS.class, Mockito.RETURNS_SMART_NULLS);
         viewGroup = Mockito.mock(ViewGroup.class, Mockito.RETURNS_SMART_NULLS);
         context = Mockito.mock(Context.class, Mockito.RETURNS_SMART_NULLS);
         view = Mockito.mock(CardView.class, Mockito.RETURNS_SMART_NULLS);
@@ -81,17 +81,17 @@ public class CardListAdapterUBSUnitTest {
     @Test
     public void onBindViewHolderTest() {
 
-        Mockito.when(viewHolderUBS.getTextViewUbsName()).thenReturn(textView);
-        Mockito.when(viewHolderUBS.getTextViewUbsNeighborhood()).thenReturn(textView);
-        Mockito.when(viewHolderUBS.getTextViewUbsCity()).thenReturn(textView);
-        Mockito.when(viewHolderUBS.getTextViewUbsAttentionLevel()).thenReturn(textView);
-        Mockito.when(viewHolderUBS.getButtonSelectMedicine()).thenReturn(Mockito.mock(Button.class));
+        Mockito.when(ViewHolderUBS.getTextViewUbsName()).thenReturn(textView);
+        Mockito.when(ViewHolderUBS.getTextViewUbsNeighborhood()).thenReturn(textView);
+        //Mockito.when(ViewHolderUBS.getTextViewUbsCity()).thenReturn(textView);
+        //Mockito.when(ViewHolderUBS.getTextViewUbsAttentionLevel()).thenReturn(textView);
+        Mockito.when(ViewHolderUBS.getButtonSelectMedicine()).thenReturn(Mockito.mock(Button.class));
 
-        cardListAdapterUBS.onBindViewHolder(viewHolderUBS, 0);
+        cardListAdapterUBS.onBindViewHolder(ViewHolderUBS, 0);
 
         cardListAdapterUBS.setShowButtonMedicines(false);
 
-        cardListAdapterUBS.onBindViewHolder(viewHolderUBS, 0);
+        cardListAdapterUBS.onBindViewHolder(ViewHolderUBS, 0);
 
         Assert.assertNotNull(cardListAdapterUBS);
     }
