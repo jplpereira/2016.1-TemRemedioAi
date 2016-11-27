@@ -4,6 +4,10 @@ apply plugin: 'com.android.application'
      compileSdkVersion 23
      buildToolsVersion "25.0.1"
 
+     lintOptions {
+         abortOnError false
+     }
+
      defaultConfig {
          applicationId "com.tra.gppmds.temremdioa"
          minSdkVersion 19
