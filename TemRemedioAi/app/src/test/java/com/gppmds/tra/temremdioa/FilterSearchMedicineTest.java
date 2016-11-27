@@ -69,7 +69,7 @@ public class FilterSearchMedicineTest extends Filter {
         Assert.assertNotSame(resultsSuccess, resultsFail);
     }
 
-    @Test
+    /*@Test
     public void publishResultsTest(){
 
         charSequence = "Success";
@@ -86,7 +86,7 @@ public class FilterSearchMedicineTest extends Filter {
         resultsSuccess = filterSearchMedicine.performFiltering(charSequence);
 
         filterSearchMedicine.publishResults(Mockito.mock(CharSequence.class), Mockito.mock(FilterResults.class));
-    }
+    }*/
 
     /*
     -------- Ignore everything bellow this line --------

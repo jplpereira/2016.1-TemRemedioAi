@@ -69,7 +69,7 @@ public class FilterSearchUBSUnitTest extends Filter {
         Assert.assertNotSame(resultsSuccess, resultsFail);
     }
 
-    @Test
+    /*@Test
     public void publishResultsTest(){
 
         charSequence = "Success";
@@ -86,7 +86,7 @@ public class FilterSearchUBSUnitTest extends Filter {
         resultsSuccess = filterSearchUBS.performFiltering(charSequence);
 
         filterSearchUBS.publishResults(Mockito.mock(CharSequence.class), Mockito.mock(FilterResults.class));
-    }
+    }*/
 
 
 

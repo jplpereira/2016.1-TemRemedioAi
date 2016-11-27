@@ -78,7 +78,7 @@ public class CardListAdapterUBSUnitTest {
         Assert.assertEquals(UBS_SIZE, cardListAdapterUBS.getItemCount());
     }
 
-    @Test
+    /*@Test
     public void onBindViewHolderTest() {
 
         Mockito.when(ViewHolderUBS.getTextViewUbsName()).thenReturn(textView);
@@ -94,5 +94,5 @@ public class CardListAdapterUBSUnitTest {
         cardListAdapterUBS.onBindViewHolder(ViewHolderUBS, 0);
 
         Assert.assertNotNull(cardListAdapterUBS);
-    }
+    }*/
 }

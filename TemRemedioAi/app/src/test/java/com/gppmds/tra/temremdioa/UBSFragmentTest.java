@@ -35,16 +35,16 @@ public class UBSFragmentTest {
         ubsFragment = new UBSFragment();
     }
 
-    @Test
+    /*@Test
     public void newInstanceTest() {
         assertTrue(UBSFragment.class == ubsFragment.newInstance().getClass());
-    }
+    }*/
 
-    @Test
+    /*@Test
     public void getUbsAdapterTest(){
         addMapFragment(fragmentActivity, ubsFragment);
         assertNotNull(ubsFragment.getUbsAdapter());
-    }
+    }*/
 
     private void addMapFragment(FragmentActivity activity, Fragment fragment) {
         FragmentManager fragmentManager = activity.getSupportFragmentManager();
